@@ -1,9 +1,9 @@
-<h5 align="center">‎𐂐 Адаптировано из <a href="https://github.com/Star-39/Moe-Sticker-Bot">Star-39/Moe-Sticker-Bot</a></h5>
+<h5 align="center">‎𐂐 Адаптировано из <a href="https://github.com/Shineii86/MoeStickersBot">Shineii86/MoeStickersBot</a></h5>
 
 > [!IMPORTANT]
 > • **Для продакшена используйте оригинальный репозиторий**  
 > • Этот Colab-ноутбук является **персональной модификацией**, предназначенной для простого тестирования и краткосрочного самостоятельного хостинга в Google Colab.  
-> • Для круглосуточного развертывания, внесения изменений или полной поддержки функций (включая WebApp) обращайтесь к [Оригинальному репозиторию Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot).
+> • Для круглосуточного развертывания, внесения изменений или полной поддержки функций (включая WebApp) обращайтесь к [Оригинальному репозиторию MoeStickersBot](https://github.com/Shineii86/MoeStickersBot).
 
 <div align="center">
   
@@ -14,10 +14,10 @@
 [![Лицензия: GPL v3](https://img.shields.io/badge/Лицензия-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Версия Go](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
-[![Оригинальный репозиторий](https://img.shields.io/badge/Оригинал-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Star-39/Moe-Sticker-Bot)
+[![Оригинальный репозиторий](https://img.shields.io/badge/Оригинал-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Shineii86/MoeStickersBot)
 
-[![Звёзды GitHub](https://img.shields.io/github/stars/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FFB6C1)](https://github.com/Star-39/Moe-Sticker-Bot/stargazers)
-[![Форки GitHub](https://img.shields.io/github/forks/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FF6B9D)](https://github.com/Star-39/Moe-Sticker-Bot/fork)
+[![Звёзды GitHub](https://img.shields.io/github/stars/Shineii86/MoeStickersBot?style=for-the-badge&color=FFB6C1)](https://github.com/Shineii86/MoeStickersBot/stargazers)
+[![Форки GitHub](https://img.shields.io/github/forks/Shineii86/MoeStickersBot?style=for-the-badge&color=FF6B9D)](https://github.com/Shineii86/MoeStickersBot/fork)
 
 **Импортируйте стикеры LINE и Kakao в Telegram · Создавайте свои наборы · Управляйте через WebApp — всё работает бесплатно в Google Colab.**
 
@@ -226,7 +226,7 @@ Google Colab отключается примерно через 90 минут б
 └── go1.21.5             → Язык программирования Go
 
 Результат сборки:
-└── /content/Moe-Sticker-Bot/Moe-Sticker-Bot
+└── /content/MoeStickersBot/MoeStickersBot
 ```
 
 **Ожидаемый вывод:**
@@ -357,7 +357,7 @@ Google Colab отключается примерно через 90 минут б
 
 ## 📄 Лицензия и отказ от ответственности
 
-Этот Colab-ноутбук является удобной оболочкой для **Moe-Sticker-Bot**, который лицензирован под **GNU General Public License v3.0 (GPL‑3.0)**.
+Этот Colab-ноутбук является удобной оболочкой для **MoeStickersBot**, который лицензирован под **GNU General Public License v3.0 (GPL‑3.0)**.
 
 > [!WARNING]
 > **Отказ от ответственности**: Этот ноутбук использует ваш личный токен Telegram-бота и (опционально) токен ngrok. Вы несете ответственность за их сохранность. Авторы не несут ответственности за неправомерное использование или случайное разглашение.
@@ -368,7 +368,7 @@ Google Colab отключается примерно через 90 минут б
 
 ### 🌟 Оригинальный проект
 
-Этот ноутбук основан на невероятной работе **[Star-39](https://github.com/Star-39)** и всех контрибьюторов **[Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)**. Поддержите их!
+Этот ноутбук основан на невероятной работе **[Star-39](https://github.com/Star-39)** и всех контрибьюторов **[MoeStickersBot](https://github.com/Shineii86/MoeStickersBot)**. Поддержите их!
 
 ### 📓 Автор Colab-ноутбука
 
@@ -377,7 +377,7 @@ Google Colab отключается примерно через 90 минут б
 
 ### 🛠️ Инструменты и библиотеки
 
-- [Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot) — Основной Telegram-бот (Go)
+- [MoeStickersBot](https://github.com/Shineii86/MoeStickersBot) — Основной Telegram-бот (Go)
 - [ImageMagick](https://imagemagick.org/) — Обработка изображений
 - [ffmpeg](https://ffmpeg.org/) — Конвертация видео
 - [exiv2](https://exiv2.org/) — Работа с метаданными
@@ -391,7 +391,7 @@ Google Colab отключается примерно через 90 минут б
 
 ### 💕 Поддержите проекты
 
-⭐ **[Поставьте звезду Star-39/Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)**  
+⭐ **[Поставьте звезду Shineii86/MoeStickersBot](https://github.com/Shineii86/MoeStickersBot)**  
 ⭐ **[Поставьте звезду этому Colab-ноутбуку](https://github.com/Shineii86/MoeStickerBot)**
 
 <br>

@@ -1,9 +1,9 @@
-<h5 align="center">‎𐂐 <a href="https://github.com/Star-39/Moe-Sticker-Bot">Star-39/Moe-Sticker-Bot</a>에서 적용됨</h5>
+<h5 align="center">‎𐂐 <a href="https://github.com/Shineii86/MoeStickersBot">Shineii86/MoeStickersBot</a>에서 적용됨</h5>
 
 > [!IMPORTANT]
 > • **프로덕션 환경에서는 원본 저장소를 사용하십시오**  
 > • 이 Colab 노트북은 Google Colab에서 간편한 테스트 및 단기 자체 호스팅을 위해 설계된 **개인 맞춤형 버전**입니다.  
-> • 24시간 연중무휴 배포, 기여 또는 전체 기능 지원(WebApp 포함)이 필요한 경우 [원본 Moe-Sticker-Bot 저장소](https://github.com/Star-39/Moe-Sticker-Bot)를 참조하십시오.
+> • 24시간 연중무휴 배포, 기여 또는 전체 기능 지원(WebApp 포함)이 필요한 경우 [원본 MoeStickersBot 저장소](https://github.com/Shineii86/MoeStickersBot)를 참조하십시오.
 
 <div align="center">
 
@@ -14,10 +14,10 @@
 [![라이선스: GPL v3](https://img.shields.io/badge/라이선스-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Go 버전](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
-[![원본 저장소](https://img.shields.io/badge/원본-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Star-39/Moe-Sticker-Bot)
+[![원본 저장소](https://img.shields.io/badge/원본-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Shineii86/MoeStickersBot)
 
-[![GitHub 별](https://img.shields.io/github/stars/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FFB6C1)](https://github.com/Star-39/Moe-Sticker-Bot/stargazers)
-[![GitHub 포크](https://img.shields.io/github/forks/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FF6B9D)](https://github.com/Star-39/Moe-Sticker-Bot/fork)
+[![GitHub 별](https://img.shields.io/github/stars/Shineii86/MoeStickersBot?style=for-the-badge&color=FFB6C1)](https://github.com/Shineii86/MoeStickersBot/stargazers)
+[![GitHub 포크](https://img.shields.io/github/forks/Shineii86/MoeStickersBot?style=for-the-badge&color=FF6B9D)](https://github.com/Shineii86/MoeStickersBot/fork)
 
 **LINE & 카카오 스티커를 Telegram으로 가져오기 · 나만의 스티커 세트 만들기 · WebApp으로 모든 것 관리 — Google Colab에서 무료로 실행.**
 
@@ -226,7 +226,7 @@ Go 컴파일러:
 └── go1.21.5             → Go 프로그래밍 언어
 
 빌드 출력:
-└── /content/Moe-Sticker-Bot/Moe-Sticker-Bot
+└── /content/MoeStickersBot/MoeStickersBot
 ```
 
 **예상 출력:**
@@ -357,7 +357,7 @@ WebApp 관리자는 Colab에서 기본 제공되지 않는 공용 HTTPS URL이 �
 
 ## 📄 라이선스 및 면책 조항
 
-이 Colab 노트북은 **Moe-Sticker-Bot**의 편의성 래퍼이며, 이는 **GNU General Public License v3.0 (GPL‑3.0)** 에 따라 라이선스가 부여됩니다.
+이 Colab 노트북은 **MoeStickersBot**의 편의성 래퍼이며, 이는 **GNU General Public License v3.0 (GPL‑3.0)** 에 따라 라이선스가 부여됩니다.
 
 > [!WARNING]
 > **면책 조항**: 이 노트북은 귀하의 개인 텔레그램 봇 토큰과 (선택적으로) ngrok 인증 토큰을 사용합니다. 토큰을 안전하게 보관할 책임은 귀하에게 있습니다. 저자는 오용이나 우발적 노출에 대해 책임을 지지 않습니다.
@@ -368,7 +368,7 @@ WebApp 관리자는 Colab에서 기본 제공되지 않는 공용 HTTPS URL이 �
 
 ### 🌟 원본 프로젝트
 
-이 노트북은 **[Star-39](https://github.com/Star-39)** 님과 **[Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)** 의 모든 기여자분들의 놀라운 작업을 기반으로 합니다. 그들에게 애정을 보내주세요!
+이 노트북은 **[Star-39](https://github.com/Star-39)** 님과 **[MoeStickersBot](https://github.com/Shineii86/MoeStickersBot)** 의 모든 기여자분들의 놀라운 작업을 기반으로 합니다. 그들에게 애정을 보내주세요!
 
 ### 📓 Colab 노트북 작성자
 
@@ -377,7 +377,7 @@ Google Colab 적응은 **[Shinei Nouzen](https://github.com/Shineii86)** 님이 
 
 ### 🛠️ 도구 및 라이브러리
 
-- [Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot) — 핵심 텔레그램 봇 (Go)
+- [MoeStickersBot](https://github.com/Shineii86/MoeStickersBot) — 핵심 텔레그램 봇 (Go)
 - [ImageMagick](https://imagemagick.org/) — 이미지 처리
 - [ffmpeg](https://ffmpeg.org/) — 비디오 변환
 - [exiv2](https://exiv2.org/) — 메타데이터 처리
@@ -391,7 +391,7 @@ Google Colab 적응은 **[Shinei Nouzen](https://github.com/Shineii86)** 님이 
 
 ### 💕 프로젝트 지원하기
 
-⭐ **[Star-39/Moe-Sticker-Bot에 별 주기](https://github.com/Star-39/Moe-Sticker-Bot)**  
+⭐ **[Shineii86/MoeStickersBot에 별 주기](https://github.com/Shineii86/MoeStickersBot)**  
 ⭐ **[이 Colab 노트북에 별 주기](https://github.com/Shineii86/MoeStickerBot)**
 
 <br>

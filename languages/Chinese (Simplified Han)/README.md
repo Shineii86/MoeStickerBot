@@ -1,9 +1,9 @@
-<h5 align="center">‎𐂐 改编自 <a href="https://github.com/Star-39/Moe-Sticker-Bot">Star-39/Moe-Sticker-Bot</a></h5>
+<h5 align="center">‎𐂐 改编自 <a href="https://github.com/Shineii86/MoeStickersBot">Shineii86/MoeStickersBot</a></h5>
 
 > [!IMPORTANT]
 > • **生产环境请使用原项目仓库**  
 > • 此 Colab 笔记本为**个人定制版本**，旨在方便用户在 Google Colab 中进行快速测试和短期自托管。  
-> • 如需 24/7 持续部署、贡献代码或使用完整功能（包括 WebApp），请参阅 [原版 Moe-Sticker-Bot 仓库](https://github.com/Star-39/Moe-Sticker-Bot)。
+> • 如需 24/7 持续部署、贡献代码或使用完整功能（包括 WebApp），请参阅 [原版 MoeStickersBot 仓库](https://github.com/Shineii86/MoeStickersBot)。
 
 <div align="center">
 
@@ -14,10 +14,10 @@
 [![许可证: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Go 版本](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
-[![原项目仓库](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Star-39/Moe-Sticker-Bot)
+[![原项目仓库](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Shineii86/MoeStickersBot)
 
-[![GitHub Stars](https://img.shields.io/github/stars/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FFB6C1)](https://github.com/Star-39/Moe-Sticker-Bot/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FF6B9D)](https://github.com/Star-39/Moe-Sticker-Bot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/Shineii86/MoeStickersBot?style=for-the-badge&color=FFB6C1)](https://github.com/Shineii86/MoeStickersBot/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Shineii86/MoeStickersBot?style=for-the-badge&color=FF6B9D)](https://github.com/Shineii86/MoeStickersBot/fork)
 
 **将 LINE 和 Kakao 贴纸导入 Telegram · 创建自定义贴纸包 · 通过 WebApp 管理一切 —— 全部在 Google Colab 上免费运行。**
 
@@ -228,7 +228,7 @@ Go 编译器：
 └── go1.21.5             → Go 编程语言
 
 构建输出：
-└── /content/Moe-Sticker-Bot/Moe-Sticker-Bot
+└── /content/MoeStickersBot/MoeStickersBot
 ```
 
 **预期输出：**
@@ -359,7 +359,7 @@ WebApp 管理器需要一个公开的 HTTPS URL，而 Colab 本身不提供。�
 
 ## 📄 许可证与免责声明
 
-此 Colab 笔记本是 **Moe-Sticker-Bot** 的便捷封装版本，后者采用 **GNU General Public License v3.0 (GPL‑3.0)** 许可。
+此 Colab 笔记本是 **MoeStickersBot** 的便捷封装版本，后者采用 **GNU General Public License v3.0 (GPL‑3.0)** 许可。
 
 > [!WARNING]
 > **免责声明**：此笔记本使用你个人的 Telegram Bot 令牌和（可选的）ngrok 认证令牌。你有责任确保其安全。作者不对任何误用或意外泄露承担责任。
@@ -370,7 +370,7 @@ WebApp 管理器需要一个公开的 HTTPS URL，而 Colab 本身不提供。�
 
 ### 🌟 原项目
 
-本笔记本基于 **[Star-39](https://github.com/Star-39)** 和 **[Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)** 所有贡献者的杰出工作构建。请为他们献上一些爱！
+本笔记本基于 **[Star-39](https://github.com/Star-39)** 和 **[MoeStickersBot](https://github.com/Shineii86/MoeStickersBot)** 所有贡献者的杰出工作构建。请为他们献上一些爱！
 
 ### 📓 Colab 笔记本作者
 
@@ -379,7 +379,7 @@ WebApp 管理器需要一个公开的 HTTPS URL，而 Colab 本身不提供。�
 
 ### 🛠️ 工具与库
 
-- [Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot) — 核心 Telegram 机器人（Go）
+- [MoeStickersBot](https://github.com/Shineii86/MoeStickersBot) — 核心 Telegram 机器人（Go）
 - [ImageMagick](https://imagemagick.org/) — 图像处理
 - [ffmpeg](https://ffmpeg.org/) — 视频转换
 - [exiv2](https://exiv2.org/) — 元数据处理
@@ -393,7 +393,7 @@ WebApp 管理器需要一个公开的 HTTPS URL，而 Colab 本身不提供。�
 
 ### 💕 支持项目
 
-⭐ **[给 Star-39/Moe-Sticker-Bot 一颗星](https://github.com/Star-39/Moe-Sticker-Bot)**  
+⭐ **[给 Shineii86/MoeStickersBot 一颗星](https://github.com/Shineii86/MoeStickersBot)**  
 ⭐ **[给这个 Colab 笔记本一颗星](https://github.com/Shineii86/MoeStickerBot)**
 
 <br>

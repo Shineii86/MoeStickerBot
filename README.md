@@ -1,9 +1,9 @@
-<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/Star-39/Moe-Sticker-Bot">Star-39/Moe-Sticker-Bot</a></h5>
+<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/Shineii86/MoeStickersBot">Shineii86/MoeStickersBot</a></h5>
 
 > [!IMPORTANT]
 > • **Use The Original Repository For Production**  
 > • This Colab Notebook Is A **Personal Customization** Designed For Easy Testing And Short‑term Self‑hosting In Google Colab.  
-> • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The [Original Moe-Sticker-Bot Repository](https://github.com/Star-39/Moe-Sticker-Bot).
+> • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The [Original MoeStickersBot Repository](https://github.com/Shineii86/MoeStickersBot).
 
 <div align="center">
 
@@ -14,10 +14,10 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
-[![Original Repo](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Star-39/Moe-Sticker-Bot)
+[![Original Repo](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Shineii86/MoeStickersBot)
 
-[![GitHub Stars](https://img.shields.io/github/stars/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FFB6C1)](https://github.com/Star-39/Moe-Sticker-Bot/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FF6B9D)](https://github.com/Star-39/Moe-Sticker-Bot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/Shineii86/MoeStickersBot?style=for-the-badge&color=FFB6C1)](https://github.com/Shineii86/MoeStickersBot/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Shineii86/MoeStickersBot?style=for-the-badge&color=FF6B9D)](https://github.com/Shineii86/MoeStickersBot/fork)
 
 **Import LINE & Kakao stickers to Telegram · Create custom sticker sets · Manage everything via WebApp — all running for free in Google Colab.**
 
@@ -226,7 +226,7 @@ Go Compiler:
 └── go1.21.5             → Go programming language
 
 Build Output:
-└── /content/Moe-Sticker-Bot/Moe-Sticker-Bot
+└── /content/MoeStickersBot/MoeStickersBot
 ```
 
 **Expected output:**
@@ -357,7 +357,7 @@ For more detailed logs, set `LOG_LEVEL = "debug"` in the Configuration cell.
 
 ## 📄 License & Disclaimer
 
-This Colab notebook is a convenience wrapper for **Moe-Sticker-Bot**, which is licensed under the **GNU General Public License v3.0 (GPL‑3.0)**.
+This Colab notebook is a convenience wrapper for **MoeStickersBot**, which is licensed under the **GNU General Public License v3.0 (GPL‑3.0)**.
 
 > [!WARNING]
 > **Disclaimer**: This notebook uses your personal Telegram Bot Token and (optionally) ngrok auth token. You are responsible for keeping them secure. The authors are not liable for any misuse or accidental exposure.
@@ -368,7 +368,7 @@ This Colab notebook is a convenience wrapper for **Moe-Sticker-Bot**, which is l
 
 ### 🌟 Original Project
 
-This notebook is built upon the incredible work of **[Star-39](https://github.com/Star-39)** and all contributors to **[Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)**. Please show them some love!
+This notebook is built upon the incredible work of **[Star-39](https://github.com/Star-39)** and all contributors to **[MoeStickersBot](https://github.com/Shineii86/MoeStickersBot)**. Please show them some love!
 
 ### 📓 Colab Notebook Author
 
@@ -377,7 +377,7 @@ If you find this notebook helpful, consider giving it a ⭐ and following for mo
 
 ### 🛠️ Tools & Libraries
 
-- [Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot) — The core Telegram bot (Go)
+- [MoeStickersBot](https://github.com/Shineii86/MoeStickersBot) — The core Telegram bot (Go)
 - [ImageMagick](https://imagemagick.org/) — Image processing
 - [ffmpeg](https://ffmpeg.org/) — Video conversion
 - [exiv2](https://exiv2.org/) — Metadata handling
@@ -391,7 +391,7 @@ If you find this notebook helpful, consider giving it a ⭐ and following for mo
 
 ### 💕 Support the Projects
 
-⭐ **[Give a star to Star-39/Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)**  
+⭐ **[Give a star to Shineii86/MoeStickersBot](https://github.com/Shineii86/MoeStickersBot)**  
 ⭐ **[Give a star to this Colab notebook](https://github.com/Shineii86/MoeStickerBot)**
 
 <br>

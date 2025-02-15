@@ -1,9 +1,9 @@
-<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/Star-39/Moe-Sticker-Bot">Star-39/Moe-Sticker-Bot</a></h5>
+<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/Shineii86/MoeStickersBot">Shineii86/MoeStickersBot</a></h5>
 
 > [!IMPORTANT]
 > • **Production ke liye Original Repository Use Karo**  
 > • Ye Colab Notebook ek **Personal Customization** hai jo easy testing aur short‑term self‑hosting ke liye Google Colab mein design kiya gaya hai.  
-> • 24/7 Deployments, Contributions, ya Full Feature Support (including WebApp) ke liye, please [Original Moe-Sticker-Bot Repository](https://github.com/Star-39/Moe-Sticker-Bot) ko refer karo.
+> • 24/7 Deployments, Contributions, ya Full Feature Support (including WebApp) ke liye, please [Original MoeStickersBot Repository](https://github.com/Shineii86/MoeStickersBot) ko refer karo.
 
 <div align="center">
 
@@ -14,10 +14,10 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
-[![Original Repo](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Star-39/Moe-Sticker-Bot)
+[![Original Repo](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Shineii86/MoeStickersBot)
 
-[![GitHub Stars](https://img.shields.io/github/stars/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FFB6C1)](https://github.com/Star-39/Moe-Sticker-Bot/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FF6B9D)](https://github.com/Star-39/Moe-Sticker-Bot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/Shineii86/MoeStickersBot?style=for-the-badge&color=FFB6C1)](https://github.com/Shineii86/MoeStickersBot/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Shineii86/MoeStickersBot?style=for-the-badge&color=FF6B9D)](https://github.com/Shineii86/MoeStickersBot/fork)
 
 **LINE aur Kakao stickers ko Telegram mein import karo · Custom sticker sets banao · WebApp se sab kuch manage karo — sab kuch Google Colab mein free mein chal raha hai.**
 
@@ -226,7 +226,7 @@ Go Compiler:
 └── go1.21.5             → Go programming language
 
 Build Output:
-└── /content/Moe-Sticker-Bot/Moe-Sticker-Bot
+└── /content/MoeStickersBot/MoeStickersBot
 ```
 
 **Expected output:**
@@ -357,7 +357,7 @@ Zyada detailed logs ke liye Configuration cell mein `LOG_LEVEL = "debug"` set ka
 
 ## 📄 License & Disclaimer
 
-Yeh Colab notebook **Moe-Sticker-Bot** ke liye ek convenience wrapper hai, jo **GNU General Public License v3.0 (GPL‑3.0)** ke under licensed hai.
+Yeh Colab notebook **MoeStickersBot** ke liye ek convenience wrapper hai, jo **GNU General Public License v3.0 (GPL‑3.0)** ke under licensed hai.
 
 > [!WARNING]
 > **Disclaimer**: Yeh notebook aapka personal Telegram Bot Token aur (optional) ngrok auth token use karta hai. Unhe secure rakhne ki zimmedari aapki hai. Authors kisi bhi misuse ya accidental exposure ke liye zimmedar nahi hain.
@@ -368,7 +368,7 @@ Yeh Colab notebook **Moe-Sticker-Bot** ke liye ek convenience wrapper hai, jo **
 
 ### 🌟 Original Project
 
-Yeh notebook **[Star-39](https://github.com/Star-39)** aur **[Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)** ke sabhi contributors ke shaandar kaam par based hai. Unhe thoda pyaar do!
+Yeh notebook **[Star-39](https://github.com/Star-39)** aur **[MoeStickersBot](https://github.com/Shineii86/MoeStickersBot)** ke sabhi contributors ke shaandar kaam par based hai. Unhe thoda pyaar do!
 
 ### 📓 Colab Notebook Author
 
@@ -377,7 +377,7 @@ Agar ye notebook helpful laga, toh ⭐ dena aur aur Colab projects ke liye follo
 
 ### 🛠️ Tools & Libraries
 
-- [Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot) — Core Telegram bot (Go)
+- [MoeStickersBot](https://github.com/Shineii86/MoeStickersBot) — Core Telegram bot (Go)
 - [ImageMagick](https://imagemagick.org/) — Image processing
 - [ffmpeg](https://ffmpeg.org/) — Video conversion
 - [exiv2](https://exiv2.org/) — Metadata handling
@@ -391,7 +391,7 @@ Agar ye notebook helpful laga, toh ⭐ dena aur aur Colab projects ke liye follo
 
 ### 💕 Projects Ko Support Karo
 
-⭐ **[Star-39/Moe-Sticker-Bot ko star do](https://github.com/Star-39/Moe-Sticker-Bot)**  
+⭐ **[Shineii86/MoeStickersBot ko star do](https://github.com/Shineii86/MoeStickersBot)**  
 ⭐ **[Is Colab notebook ko star do](https://github.com/Shineii86/MoeStickerBot)**
 
 <br>
