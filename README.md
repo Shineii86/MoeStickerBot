@@ -1,21 +1,22 @@
-<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/Star-39/Moe-Sticker-Bot">star-39/moe-sticker-bot</a></h5>
+<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/Star-39/Moe-Sticker-Bot">Star-39/Moe-Sticker-Bot</a></h5>
 
 > [!IMPORTANT]
 > • **Use The Original Repository For Production**  
 > • This Colab notebook Is A **Personal Customization** Designed For Easy Testing And Short‑term Self‑hosting In Google Colab.  
-> • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The [Original Moe-Sticker-Bot Repository](https://github.com/star-39/moe-sticker-bot).
+> • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The [Original Moe-Sticker-Bot Repository](https://github.com/Star-39/Moe-Sticker-Bot).
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=&height=200&section=header&text=Moe%20Sticker%20Bot&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Colab%20Edition%20—%20Self‑Host%20Your%20Telegram%20Sticker%20Bot&descSize=18" />
+<a href="https://t.me/MaximXStickers"><img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Moe%20Sticker%20Bot&desc=Colab%20Edition%20—%20Self‑Host%20Your%20Telegram%20Sticker%20Bot&fontAlign=48&fontAlignY=39" /></a>
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shineii86/moe-sticker-bot-colab/blob/main/notebooks/MeoStickerBot.ipynb)
-[![Original Repo](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/star-39/moe-sticker-bot)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MeoStickerBot.ipynb)
+[![Original Repo](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Star-39/Moe-Sticker-Bot)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
-[![GitHub Stars](https://img.shields.io/github/stars/star-39/moe-sticker-bot?style=for-the-badge&color=FFB6C1)](https://github.com/star-39/moe-sticker-bot/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/star-39/moe-sticker-bot?style=for-the-badge&color=FF6B9D)](https://github.com/star-39/moe-sticker-bot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FFB6C1)](https://github.com/Star-39/Moe-Sticker-Bot/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Star-39/Moe-Sticker-Bot?style=for-the-badge&color=FF6B9D)](https://github.com/Star-39/Moe-Sticker-Bot/fork)
 
 **Import LINE & Kakao stickers to Telegram · Create custom sticker sets · Manage everything via WebApp — all running for free in Google Colab.**
 
@@ -57,6 +58,7 @@
   - [Step 2: Install Dependencies & Build](#step-2-install-dependencies--build)
   - [Step 3: Download Helper Scripts](#step-3-download-helper-scripts)
   - [Step 4: Configure & Launch](#step-4-configure--launch)
+- [🌐 Optional: Enable WebApp (ngrok)](#-optional-enable-webapp-ngrok)
 - [🤖 Bot Commands](#-bot-commands)
 - [⚙️ Configuration Reference](#️-configuration-reference)
 - [🔧 Troubleshooting](#-troubleshooting)
@@ -72,7 +74,7 @@
 
 - 📥 **Import** LINE and KakaoTalk sticker packs directly into Telegram
 - 🎨 **Create** your own sticker sets from any image or video
-- 🛠️ **Manage** stickers with a beautiful drag‑and‑drop WebApp
+- 🛠️ **Manage** stickers with a beautiful drag‑and‑drop WebApp *(optional)*
 - 💾 **Download** Telegram stickers in multiple formats (PNG, WebP, GIF, WEBM)
 
 This **Google Colab Edition** packages the entire setup into a single notebook. It installs all dependencies, compiles the bot from source, and launches it in the background — no VPS or Docker required. Perfect for testing, personal use, or just having fun with stickers.
@@ -91,7 +93,7 @@ This **Google Colab Edition** packages the entire setup into a single notebook. 
 | 🎨 **Creation** | Custom Packs | Build your own sticker sets from images/videos (any format) |
 | | Animated Stickers | Convert videos to Telegram‑compatible WebM stickers |
 | | Mixed Formats | Combine static and animated stickers in the same set |
-| 🛠️ **Management** | WebApp Interface | Drag‑and‑drop reorder, edit emoji, add/remove stickers |
+| 🛠️ **Management** | WebApp Interface | Drag‑and‑drop reorder, edit emoji, add/remove stickers *(optional)* |
 | | Edit Titles | Rename existing sticker sets |
 | 💾 **Download** | Batch Export | Download entire sticker sets as ZIP archives |
 | | Format Conversion | Convert stickers to PNG, WebP, GIF, or original format |
@@ -129,8 +131,9 @@ You only need two things:
 # 1. Click the "Open in Colab" badge above
 # 2. Run all cells (Runtime → Run all)
 # 3. In the Configuration cell, paste your Bot Token
-# 4. Run the Launch cell
-# 5. Open Telegram and send /start to your bot
+# 4. (Optional) Enable WebApp and add your ngrok auth token
+# 5. Run the Launch cell
+# 6. Open Telegram and send /start to your bot
 ```
 
 That's it! The notebook handles everything else: installing Go, system tools, Python helpers, and compiling the bot.
@@ -162,7 +165,7 @@ Go Compiler:
 └── go1.21.5             → Go programming language
 
 Build Output:
-└── /content/moe-sticker-bot/moe-sticker-bot
+└── /content/Moe-Sticker-Bot/Moe-Sticker-Bot
 ```
 
 **Expected output:**
@@ -188,26 +191,29 @@ These are placed in `/usr/local/bin/` so the bot can find them.
 
 ### Step 4: Configure & Launch
 
-The Configuration cell contains all settings you can adjust:
+The Configuration cell contains all settings you can adjust. At minimum, enter your `BOT_TOKEN`. After configuring, run the **Launch** cell.
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `BOT_TOKEN` | ✅ Yes | Your Telegram Bot Token |
-| `ENABLE_DB` | ❌ No | Enable MariaDB for shared sticker sets |
-| `DB_ADDR` / `DB_USER` / `DB_PASS` | Only if DB enabled | Database connection details |
-| `DATA_DIR` | ❌ No | Where the bot stores data (default: `moe_sticker_bot_data`) |
-| `LOG_LEVEL` | ❌ No | `debug`, `info`, `warn`, or `error` |
-| `HTTP_PROXY` | ❌ No | Proxy URL if needed |
+---
 
-After entering your token, run the **Launch** cell. The bot will start in the background, and you'll see:
+## 🌐 Optional: Enable WebApp (ngrok)
 
-```
-✅ Bot launched!
-   • PID: 12345
-   • Logs: bot_stdout.log, bot_stderr.log
-✅ Bot is RUNNING and connected to Telegram!
-📱 Go to Telegram and send /start to your bot!
-```
+The WebApp manager requires a public HTTPS URL, which Colab doesn't provide natively. The notebook includes built‑in support for **ngrok** to create a secure tunnel.
+
+### How to Enable
+
+1. **Sign up for a free ngrok account** at [ngrok.com](https://ngrok.com/).
+2. Copy your **authtoken** from the [dashboard](https://dashboard.ngrok.com/auth).
+3. In the **Configuration** cell:
+   - Set `ENABLE_WEBAPP = True`
+   - Paste your token into `NGROK_AUTHTOKEN`
+   - (Optional) Change `WEBAPP_PORT` if needed
+4. Run all cells. The notebook will automatically:
+   - Download and install ngrok
+   - Start a tunnel to the WebApp port
+   - Retrieve the public `https://` URL
+   - Pass it to the bot via `--webapp_url`
+
+> ⚠️ **Note**: Free ngrok URLs are temporary and change each session. You'll need to re‑run the setup if the Colab runtime restarts.
 
 ---
 
@@ -222,7 +228,7 @@ Once running, interact with your bot on Telegram using these commands:
 | `/import` | Import a LINE or Kakao sticker pack from a share link |
 | `/search` | Search for previously imported sticker sets |
 | `/create` | Create a new sticker set from your own images/videos |
-| `/manage` | Open the WebApp manager for your sticker sets |
+| `/manage` | Open the WebApp manager for your sticker sets *(requires WebApp enabled)* |
 | `/download` | Download Telegram stickers or GIFs |
 | `/crop` | Crop an image before making it a sticker |
 | `/resize` | Resize an image |
@@ -237,18 +243,19 @@ Once running, interact with your bot on Telegram using these commands:
 
 ## ⚙️ Configuration Reference
 
-The bot accepts these command‑line flags (automatically built by the notebook):
+The notebook provides the following configuration options:
 
-| Flag | Description | Default |
-|------|-------------|---------|
-| `--bot_token` | **Required.** Telegram Bot Token | *(none)* |
-| `--data_dir` | Working directory for bot data | `moe_sticker_bot_data` |
-| `--log_level` | Logging verbosity | `info` |
-| `--db_addr` | MariaDB server address (host:port) | *(empty)* |
-| `--db_user` | Database username | *(empty)* |
-| `--db_pass` | Database password | *(empty)* |
-| `--db_name` | Database name | `moe_sticker_bot` |
-| `--http_proxy` | HTTP proxy URL | *(empty)* |
+| Field | Required | Description |
+|-------|----------|-------------|
+| `BOT_TOKEN` | ✅ Yes | Your Telegram Bot Token |
+| `ENABLE_DB` | ❌ No | Enable MariaDB for shared sticker sets |
+| `DB_ADDR` / `DB_USER` / `DB_PASS` | Only if DB enabled | Database connection details |
+| `ENABLE_WEBAPP` | ❌ No | Enable WebApp support via ngrok |
+| `WEBAPP_PORT` | Only if WebApp | Port for internal WebApp server (default: 8080) |
+| `NGROK_AUTHTOKEN` | Only if WebApp | Your free ngrok authtoken |
+| `DATA_DIR` | ❌ No | Where the bot stores data |
+| `LOG_LEVEL` | ❌ No | `debug`, `info`, `warn`, or `error` |
+| `HTTP_PROXY` | ❌ No | Proxy URL if needed |
 
 ---
 
@@ -259,8 +266,8 @@ The bot accepts these command‑line flags (automatically built by the notebook)
 | **"Bot exited immediately"** | Check `bot_stderr.log`. Common cause: invalid token format. |
 | **Missing exiv2 warning** | Re‑run the dependency cell: `!apt-get install -y exiv2` |
 | **Bot stops after ~90 minutes** | This is normal on free Colab. Keep the tab active, or use Colab Pro. |
-| **Sticker conversion fails** | Ensure `ffmpeg` and `ImageMagick` are installed. Re‑run the first cell. |
-| **WebApp not working** | WebApp requires a public HTTPS URL. It's disabled by default on Colab. |
+| **WebApp not working** | Ensure `ENABLE_WEBAPP = True` and a valid `NGROK_AUTHTOKEN` is provided. |
+| **ngrok URL not retrieved** | Check that your ngrok auth token is correct and that port `4040` isn't blocked. |
 | **"Database not enabled" warning** | This is fine — the bot works fully without a database. |
 
 For more detailed logs, set `LOG_LEVEL = "debug"` in the Configuration cell.
@@ -270,16 +277,13 @@ For more detailed logs, set `LOG_LEVEL = "debug"` in the Configuration cell.
 ## ❓ FAQ
 
 ### Q: Is this really free?
-**A:** Yes! Google Colab is free, and the bot is open‑source. You only need a Telegram account.
+**A:** Yes! Google Colab is free, ngrok offers a free tier, and the bot is open‑source.
 
 ### Q: Can I keep it running 24/7?
-**A:** Free Colab sessions disconnect after inactivity. For permanent hosting, consider:
-- Colab Pro (up to 24‑hour runtimes)
-- A cheap VPS (Oracle Cloud free tier works great)
-- The official Docker container
+**A:** Free Colab sessions disconnect after inactivity. For permanent hosting, consider a VPS or the official Docker image.
 
-### Q: Do I need a database?
-**A:** No. The database is only required for the shared sticker set feature. For personal use, everything works without it.
+### Q: Do I need the WebApp?
+**A:** No, it's completely optional. The bot works perfectly without it; only the drag‑and‑drop sticker management feature requires the WebApp.
 
 ### Q: Can I use my own custom stickers?
 **A:** Absolutely! Send any image or video to the bot, and it will guide you through cropping, resizing, and converting.
@@ -291,9 +295,9 @@ For more detailed logs, set `LOG_LEVEL = "debug"` in the Configuration cell.
 
 ## 📄 License & Disclaimer
 
-This Colab notebook is a convenience wrapper for **moe-sticker-bot**, which is licensed under the **GNU General Public License v3.0 (GPL‑3.0)**.
+This Colab notebook is a convenience wrapper for **Moe-Sticker-Bot**, which is licensed under the **GNU General Public License v3.0 (GPL‑3.0)**.
 
-> ⚠️ **Disclaimer**: This notebook uses your personal Telegram Bot Token. You are responsible for keeping it secure. The authors are not liable for any misuse or accidental exposure.
+> ⚠️ **Disclaimer**: This notebook uses your personal Telegram Bot Token and (optionally) ngrok auth token. You are responsible for keeping them secure. The authors are not liable for any misuse or accidental exposure.
 
 ---
 
@@ -301,7 +305,7 @@ This Colab notebook is a convenience wrapper for **moe-sticker-bot**, which is l
 
 ### 🌟 Original Project
 
-This notebook is built upon the incredible work of **[star-39](https://github.com/star-39)** and all contributors to **[moe-sticker-bot](https://github.com/star-39/moe-sticker-bot)**. Please show them some love!
+This notebook is built upon the incredible work of **[Star-39](https://github.com/Star-39)** and all contributors to **[Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)**. Please show them some love!
 
 ### 📓 Colab Notebook Author
 
@@ -310,10 +314,11 @@ If you find this notebook helpful, consider giving it a ⭐ and following for mo
 
 ### 🛠️ Tools & Libraries
 
-- [moe-sticker-bot](https://github.com/star-39/moe-sticker-bot) — The core Telegram bot (Go)
+- [Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot) — The core Telegram bot (Go)
 - [ImageMagick](https://imagemagick.org/) — Image processing
 - [ffmpeg](https://ffmpeg.org/) — Video conversion
 - [exiv2](https://exiv2.org/) — Metadata handling
+- [ngrok](https://ngrok.com/) — Secure tunnel for WebApp
 - [Google Colab](https://colab.research.google.com/) — Free cloud runtime
 - [tqdm](https://github.com/tqdm/tqdm) — Progress bars
 
@@ -323,8 +328,8 @@ If you find this notebook helpful, consider giving it a ⭐ and following for mo
 
 ### 💕 Support the Projects
 
-⭐ **[Give a star to star-39/moe-sticker-bot](https://github.com/star-39/moe-sticker-bot)**  
-⭐ **[Give a star to this Colab notebook](https://github.com/Shineii86/moe-sticker-bot-colab)**
+⭐ **[Give a star to Star-39/Moe-Sticker-Bot](https://github.com/Star-39/Moe-Sticker-Bot)**  
+⭐ **[Give a star to this Colab notebook](https://github.com/Shineii86/MoeStickerBot)**
 
 <br>
 
@@ -335,10 +340,8 @@ If you find this notebook helpful, consider giving it a ⭐ and following for mo
   <img src="https://img.shields.io/badge/Telegram-@Shineii86-2CA5E0?style=for-the-badge&logo=telegram" alt="Telegram">
 </a>
 
-<br><br>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&section=footer" width="100%">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=&height=100&section=footer" width="100%">
-
-<sup><b>Original Bot Copyright © star-39 and contributors. GPL‑3.0 License.<br>Colab Adaptation © Shinei Nouzen. All Rights Reserved.</b></sup>
+<sup><b>Original Bot Copyright © Star-39 and contributors. GPL‑3.0 License.<br>Colab Adaptation © Shinei Nouzen. All Rights Reserved.</b></sup>
 
 </div>
