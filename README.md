@@ -7,7 +7,7 @@
 
 <div align="center">
 
-<a href="https://t.me/MaximXStickers"><img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Moe%20Sticker%20Bot&desc=Colab%20Edition%20—%20Self‑Host%20Your%20Telegram%20Sticker%20Bot&fontAlign=48&fontAlignY=39" /></a>
+<a href="https://capsule-render.vercel.app/api?type=waving&color=FF6B6B,FFB6C1,FFFACD&height=200&section=header&text=🌸%20Moe%20Sticker%20Bot&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Colab%20Edition%20" /></a>
 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MeoStickerBot.ipynb)
@@ -49,6 +49,10 @@
 ## 📖 Table of Contents
 
 - [🎯 Overview](#-overview)
+- [📓 Choose Your Version](#-choose-your-version)
+  - [v1 — Clean & Minimal](#v1--clean--minimal)
+  - [v2 — Animated Colors](#v2--animated--colors)
+  - [v3 — Terminal UI](#3--terminal--ui)
 - [✨ Features](#-features)
 - [🛠️ Prerequisites](#️-prerequisites)
   - [🔐 Create a Telegram Bot Token](#-create-a-telegram-bot-token)
@@ -81,6 +85,62 @@ This **Google Colab Edition** packages the entire setup into a single notebook. 
 
 > [!NOTE]
 >  Free Colab sessions disconnect after ~90 minutes of inactivity. For 24/7 hosting, consider a VPS or the official Docker image.
+
+---
+
+## 📓 Choose Your Version
+
+Pick the notebook that fits your style:
+
+### v1 — Clean & Minimal
+
+- 🟢 Simple, straightforward output
+- ⚡ Fast — no animations, just essential info
+- ✅ Perfect for users who just want it to work
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBotV1.ipynb">
+    <img src="https://img.shields.io/badge/Open%20in%20Colab-Simple%20%26%20Minimal-4ECDC4?style=for-the-badge&logo=googlecolab" alt="Open v1 in Colab">
+  </a>
+</p>
+
+### v2 — Animated Colors
+
+- 🎨 Full ANSI color support with background highlights
+- ⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏ Animated braille spinners during long steps
+- 💬 Clean, modern output with success/error/warning badges
+- ✨ Best balance of style and readability
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBotV2.ipynb">
+    <img src="https://img.shields.io/badge/Open%20in%20Colab-Animated%20Colors-FF6B9D?style=for-the-badge&logo=googlecolab" alt="Open v2 in Colab">
+  </a>
+</p>
+
+### v3 — Terminal UI
+
+- 🖥️ Complete Terminal/ssh
+- 🎨 ANSI colors, backgrounds, and ASCII banners
+- 📟 Simulated shell commands for a true "H4CK3R" vibe
+- ✨ Perfect for demos, teaching, or showing off
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBotV3.ipynb">
+    <img src="https://img.shields.io/badge/Open%20in%20Colab-Terminal%20UI-8B5CF6?style=for-the-badge&logo=googlecolab" alt="Open v3 in Colab">
+  </a>
+</p>
+
+---
+
+### 💡 Pro Tip: Keep Colab Running Longer
+
+Google Colab disconnects after ~90 minutes of inactivity. To maximize uptime without paying:
+
+1. **Minimize the Colab widget** – Click the **< >** button (bottom‑left) to collapse the code/output panel. The session stays active while minimized.
+2. **Keep the browser tab open** – Don't close it; you can switch to other tabs.
+3. **Occasionally interact** – Scroll or click inside the notebook every 30‑45 minutes.
+
+> For 24/7 operation, consider upgrading to **Colab Pro** (longer runtimes) or deploying on a free VPS (e.g., Oracle Cloud Always Free).
 
 ---
 
