@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 > • **Use The Original Repository For Production**  
-> • This Colab notebook Is A **Personal Customization** Designed For Easy Testing And Short‑term Self‑hosting In Google Colab.  
+> • This Colab Notebook Is A **Personal Customization** Designed For Easy Testing And Short‑term Self‑hosting In Google Colab.  
 > • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The [Original Moe-Sticker-Bot Repository](https://github.com/Star-39/Moe-Sticker-Bot).
 
 <div align="center">
