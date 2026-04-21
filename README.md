@@ -7,11 +7,10 @@
 
 <div align="center">
 
-<a href="https://capsule-render.vercel.app/api?type=waving&color=FF6B6B,FFB6C1,FFFACD&height=200&section=header&text=🌸%20Moe%20Sticker%20Bot&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Colab%20Edition%20" /></a>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=𝗠𝗼𝗲%20𝗦𝘁𝗶𝗰𝗸𝗲𝗿%20𝗕𝗼𝘁&fontAlignY=30&fontSize=100&desc=𝖢𝗈𝗅𝖺𝖻%20𝖤𝖽𝗂𝗍𝗂𝗈𝗇%20—%20𝖲𝖾𝗅𝖿‑𝖧𝗈𝗌𝗍%20𝖸𝗈𝗎𝗋%20𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆%20𝖲𝗍𝗂𝖼𝗄𝖾𝗋%20𝖡𝗈𝗍&descSize=30" />
 
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MeoStickerBot.ipynb)
 [![Original Repo](https://img.shields.io/badge/Original-Star--39%2FMoe--Sticker--Bot-181717?style=flat&logo=github)](https://github.com/Star-39/Moe-Sticker-Bot)
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
@@ -400,7 +399,7 @@ If you find this notebook helpful, consider giving it a ⭐ and following for mo
   <img src="https://img.shields.io/badge/Telegram-@Shineii86-2CA5E0?style=for-the-badge&logo=telegram" alt="Telegram">
 </a>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&section=footer" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&fontAlignY=30&section=footer">
 
 <sup><b>Original Bot Copyright © Star-39 and contributors. GPL‑3.0 License.<br>Colab Adaptation © Shinei Nouzen. All Rights Reserved.</b></sup>
 
