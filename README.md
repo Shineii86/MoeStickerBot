@@ -272,7 +272,8 @@ The WebApp manager requires a public HTTPS URL, which Colab doesn't provide nati
    - Retrieve the public `https://` URL
    - Pass it to the bot via `--webapp_url`
 
-> ⚠️ **Note**: Free ngrok URLs are temporary and change each session. You'll need to re‑run the setup if the Colab runtime restarts.
+> [!NOTE]
+> Free ngrok URLs are temporary and change each session. You'll need to re‑run the setup if the Colab runtime restarts.
 
 ---
 
@@ -335,20 +336,20 @@ For more detailed logs, set `LOG_LEVEL = "debug"` in the Configuration cell.
 
 ## ❓ FAQ
 
-### Q: Is this really free?
-**A:** Yes! Google Colab is free, ngrok offers a free tier, and the bot is open‑source.
+### Q: Is this Really Free?
+> **A:** Yes! Google Colab is free, ngrok offers a free tier, and the bot is open‑source.
 
-### Q: Can I keep it running 24/7?
-**A:** Free Colab sessions disconnect after inactivity. For permanent hosting, consider a VPS or the official Docker image.
+### Q: Can I Keep It Running 24/7?
+> **A:** Free Colab sessions disconnect after inactivity. For permanent hosting, consider a VPS or the official Docker image.
 
-### Q: Do I need the WebApp?
-**A:** No, it's completely optional. The bot works perfectly without it; only the drag‑and‑drop sticker management feature requires the WebApp.
+### Q: Do I Need The Webapp?
+> **A:** No, it's completely optional. The bot works perfectly without it; only the drag‑and‑drop sticker management feature requires the WebApp.
 
-### Q: Can I use my own custom stickers?
-**A:** Absolutely! Send any image or video to the bot, and it will guide you through cropping, resizing, and converting.
+### Q: Can I Use My Own Custom Stickers?
+> **A:** Absolutely! Send any image or video to the bot, and it will guide you through cropping, resizing, and converting.
 
-### Q: Does it support animated stickers?
-**A:** Yes! The bot converts videos to WebM format and supports both static and animated stickers in the same pack.
+### Q: Does It Support Animated Stickers?
+> **A:** Yes! The bot converts videos to WebM format and supports both static and animated stickers in the same pack.
 
 ---
 
@@ -356,7 +357,8 @@ For more detailed logs, set `LOG_LEVEL = "debug"` in the Configuration cell.
 
 This Colab notebook is a convenience wrapper for **Moe-Sticker-Bot**, which is licensed under the **GNU General Public License v3.0 (GPL‑3.0)**.
 
-> ⚠️ **Disclaimer**: This notebook uses your personal Telegram Bot Token and (optionally) ngrok auth token. You are responsible for keeping them secure. The authors are not liable for any misuse or accidental exposure.
+> [!WARNING]
+> **Disclaimer**: This notebook uses your personal Telegram Bot Token and (optionally) ngrok auth token. You are responsible for keeping them secure. The authors are not liable for any misuse or accidental exposure.
 
 ---
 
