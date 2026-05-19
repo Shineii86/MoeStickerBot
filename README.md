@@ -49,8 +49,7 @@
 
 - [🎯 Overview](#-overview)
 - [📓 Choose Your Version](#-choose-your-version)
-  - [v1 — Clean & Minimal](#v1--clean--minimal)
-  - [v2 — Animated Colors](#v2--animated--colors)
+  - [Animated Colors](#-animated--colors)
 - [✨ Features](#-features)
 - [🛠️ Prerequisites](#️-prerequisites)
   - [🔐 Create a Telegram Bot Token](#-create-a-telegram-bot-token)
@@ -90,19 +89,7 @@ This **Google Colab Edition** packages the entire setup into a single notebook. 
 
 Pick the notebook that fits your style:
 
-### v1 — Clean & Minimal
-
-- 🟢 Simple, straightforward output
-- ⚡ Fast — no animations, just essential info
-- ✅ Perfect for users who just want it to work
-
-<p align="center">
-  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBotV1.ipynb">
-    <img src="https://img.shields.io/badge/Open%20in%20Colab-Simple%20%26%20Minimal-4ECDC4?style=for-the-badge&logo=googlecolab" alt="Open v1 in Colab">
-  </a>
-</p>
-
-### v2 — Animated Colors
+### Animated Colors
 
 - 🎨 Full ANSI color support with background highlights
 - ⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏ Animated braille spinners during long steps
@@ -110,7 +97,7 @@ Pick the notebook that fits your style:
 - ✨ Best balance of style and readability
 
 <p align="center">
-  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBotV2.ipynb">
+  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBot.ipynb">
     <img src="https://img.shields.io/badge/Open%20in%20Colab-Animated%20Colors-FF6B9D?style=for-the-badge&logo=googlecolab" alt="Open v2 in Colab">
   </a>
 </p>
