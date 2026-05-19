@@ -1,9 +1,9 @@
-<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/Shineii86/MoeStickersBot">Shineii86/MoeStickersBot</a></h5>
+<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/star-39/moe-sticker-bot">Star-39/Moe-Sticker-Bot</a></h5>
 
 > [!IMPORTANT]
 > • **Use The Original Repository For Production**  
 > • This Colab Notebook Is A **Personal Customization** Designed For Easy Testing And Short‑term Self‑hosting In Google Colab.  
-> • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The [Original MoeStickersBot Repository](https://github.com/Shineii86/MoeStickersBot).
+> • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The [Original Moe-Sticker-Bot Repository](https://github.com/star-39/moe-sticker-bot).
 
 <div align="center">
 
@@ -12,7 +12,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
-[![Original Repo](https://img.shields.io/badge/Original-Shineii86%2FMoeStickerBot-181717?style=flat&logo=github)](https://github.com/Shineii86/MoeStickersBot)
+[![Original Repo](https://img.shields.io/badge/Original-star-39%2Fmoe-sticker-bot-181717?style=flat&logo=github)](https://github.com/star-39/moe-sticker-bot)
 
 [![GitHub Stars](https://img.shields.io/github/stars/Shineii86/MoeStickersBot?style=for-the-badge&color=FFB6C1)](https://github.com/Shineii86/MoeStickersBot/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/Shineii86/MoeStickersBot?style=for-the-badge&color=FF6B9D)](https://github.com/Shineii86/MoeStickersBot/fork)
@@ -339,7 +339,7 @@ This Colab notebook is a convenience wrapper for **MoeStickersBot**, which is li
 
 ### 🌟 Original Project
 
-This notebook is built upon the incredible work of **[Star-39](https://github.com/Star-39)** and all contributors to **[MoeStickersBot](https://github.com/Shineii86/MoeStickersBot)**. Please show them some love!
+This notebook is built upon the incredible work of **[Star-39](https://github.com/Star-39)** and all contributors to **[Moe-Sticker-Bot](https://github.com/star-39/moe-sticker-bot)**. Please show them some love!
 
 ### 📓 Colab Notebook Author
 
@@ -348,7 +348,7 @@ If you find this notebook helpful, consider giving it a ⭐ and following for mo
 
 ### 🛠️ Tools & Libraries
 
-- [MoeStickersBot](https://github.com/Shineii86/MoeStickersBot) — The core Telegram bot (Go)
+- [Moe-Sticker-Bot](https://github.com/star-39/moe-sticker-bot) — The core Telegram bot (Go)
 - [ImageMagick](https://imagemagick.org/) — Image processing
 - [ffmpeg](https://ffmpeg.org/) — Video conversion
 - [exiv2](https://exiv2.org/) — Metadata handling
