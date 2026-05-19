@@ -7,8 +7,6 @@
 
 <div align="center">
 
-<sub>[English](https://github.com/Shineii86/MoeStickerBot/blob/main/README.md) • [中文（简体汉字）](https://github.com/Shineii86/MoeStickerBot/blob/main/languages/Chinese%20(Simplified%20Han)/README.md) • [中文（繁體漢字）](https://github.com/Shineii86/MoeStickerBot/blob/main/languages/Chinese%20(Traditional%20Han)/README.md) • [한국인](https://github.com/Shineii86/MoeStickerBot/blob/main/languages/Korean/README.md) • [Русский](https://github.com/Shineii86/MoeStickerBot/blob/main/languages/Russian/README.md) • [Hinglish](https://github.com/Shineii86/MoeStickerBot/blob/main/languages/Hinglish/README.md)</sub>
-
 <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=𝗠𝗼𝗲%20𝗦𝘁𝗶𝗰𝗸𝗲𝗿%20𝗕𝗼𝘁&fontAlignY=30&fontSize=100&desc=𝖢𝗈𝗅𝖺𝖻%20𝖤𝖽𝗂𝗍𝗂𝗈𝗇%20—%20𝖲𝖾𝗅𝖿‑𝖧𝗈𝗌𝗍%20𝖸𝗈𝗎𝗋%20𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆%20𝖲𝗍𝗂𝖼𝗄𝖾𝗋%20𝖡𝗈𝗍&descSize=30" />
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -53,7 +51,6 @@
 - [📓 Choose Your Version](#-choose-your-version)
   - [v1 — Clean & Minimal](#v1--clean--minimal)
   - [v2 — Animated Colors](#v2--animated--colors)
-  - [v3 — Terminal UI](#3--terminal--ui)
 - [✨ Features](#-features)
 - [🛠️ Prerequisites](#️-prerequisites)
   - [🔐 Create a Telegram Bot Token](#-create-a-telegram-bot-token)
@@ -115,19 +112,6 @@ Pick the notebook that fits your style:
 <p align="center">
   <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBotV2.ipynb">
     <img src="https://img.shields.io/badge/Open%20in%20Colab-Animated%20Colors-FF6B9D?style=for-the-badge&logo=googlecolab" alt="Open v2 in Colab">
-  </a>
-</p>
-
-### v3 — Terminal UI
-
-- 🖥️ Complete Terminal/ssh
-- 🎨 ANSI colors, backgrounds, and ASCII banners
-- 📟 Simulated shell commands for a true "H4CK3R" vibe
-- ✨ Perfect for demos, teaching, or showing off
-
-<p align="center">
-  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBotV3.ipynb">
-    <img src="https://img.shields.io/badge/Open%20in%20Colab-Terminal%20UI-8B5CF6?style=for-the-badge&logo=googlecolab" alt="Open v3 in Colab">
   </a>
 </p>
 
