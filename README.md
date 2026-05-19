@@ -1,9 +1,9 @@
-<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/star-39/moe-sticker-bot">Star-39/Moe-Sticker-Bot</a></h5>
+<h5 align="center">‎𐂐 Adapted from <a href="https://github.com/Shineii86/MoeStickersBot">Shineii86/MoeStickesBot</a></h5>
 
 > [!IMPORTANT]
 > • **Use The Original Repository For Production**  
 > • This Colab Notebook Is A **Personal Customization** Designed For Easy Testing And Short‑term Self‑hosting In Google Colab.  
-> • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The [Original Moe-Sticker-Bot Repository](https://github.com/star-39/moe-sticker-bot).
+> • For 24/7 Deployments, Contributions, Or Full Feature Support (Including WebApp), Please Refer To The Original [Moe-Sticker-Bot](https://github.com/star-39/moe-sticker-bot) Repository.
 
 <div align="center">
 
