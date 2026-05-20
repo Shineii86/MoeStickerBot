@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.4] — 2026-05-20
+
+### Added
+- Added China accessibility note to Chinese README (Google Colab blocked by GFW)
+- Listed alternative platforms: Kaggle Kernels, 百度 AI Studio, 阿里云 PAI-DSW
+
 ## [v1.4.3] — 2026-05-20
 
 ### Fixed

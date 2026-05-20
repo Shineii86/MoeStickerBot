@@ -80,6 +80,13 @@
 > [!NOTE]
 > 免费 Colab 会话在约 90 分钟不活动后会断开连接。如需 24/7 托管，请考虑使用 VPS 或官方 Docker 镜像。
 
+> [!WARNING]
+> ⚠️ **中国大陆用户请注意**：Google Colab 在中国大陆无法直接访问（被 GFW 屏蔽）。你需要使用 VPN/代理才能访问。如果没有 VPN，可以考虑以下替代方案：
+> - **[Kaggle Kernels](https://www.kaggle.com/code)** — 免费 GPU，无需 VPN，支持 Jupyter Notebook
+> - **[百度 AI Studio](https://aistudio.baidu.com/)** — 国内免费 GPU 平台
+> - **[阿里云 PAI-DSW](https://pai.console.aliyun.com/)** — 阿里云免费 GPU 实例
+> - **自建 VPS** — 阿里云、腾讯云等国内云服务器
+
 ---
 
 ## 📓 笔记本
