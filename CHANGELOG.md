@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.5.0] — 2026-05-20
+
+### Removed
+- Removed Chinese README (README_ZH.md)
+- Removed Chinese notebook (notebooks/MoeStickerBot_ZH.ipynb)
+- Removed language switcher from English README
+
 ## [v1.4.5] — 2026-05-20
 
 ### Fixed

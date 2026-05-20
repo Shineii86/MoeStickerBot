@@ -19,8 +19,6 @@
 
 **Import LINE & Kakao stickers to Telegram · Create custom sticker sets · Manage everything via WebApp — all running for free in Google Colab.**
 
-🇺🇸 English | [🇨🇳 中文](README_ZH.md)
-
 </div>
 
 ---
