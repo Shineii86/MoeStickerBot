@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.0] — 2026-05-20
+
+### Added
+- Chinese (中文) README translation as README_ZH.md
+- Language switcher links in both English and Chinese READMEs
+
 ## [v1.3.2] — 2026-05-20
 
 ### Fixed
