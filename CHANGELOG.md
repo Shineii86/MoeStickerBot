@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.6.0] — 2026-05-20
+
+### Added
+- Timestamps on all status messages (success/error/warn/info) showing HH:MM:SS
+- `debug()` helper — prints only when LOG_LEVEL="debug"
+- `progress_bar()` — animated progress bar for iterations
+- `box()` — styled box with title and content lines
+- `kv()` — key-value pair printer with bullet styling
+- `banner_kv()` — key-value for banner context
+- `ITALIC` (IT), `UNDERLINE` (UL), `BLINK` ANSI attributes
+- `BGMG` (magenta bg), `BGCY` (cyan bg) background colors
+- FATAL log level highlighting in colorize (red bg + bold)
+- Database operation keywords in colorize (MariaDB OK, Insert LineS/UserS)
+- IP address/port dimming in log output
+- Regex-based log level matching (whole word, avoids partial replacements)
+- Theme mode indicator in banner (DARK/LIGHT)
+- Debug mode indicator in banner (ON/off)
+
+### Changed
+- Redesigned banner with wider box (56 chars), cleaner layout
+- Status badges now use colored left-strip + bold text (not full background)
+- Header uses simple `───` lines instead of `═══` (cleaner look)
+- Spinner uses 80ms tick rate (was 100ms) for smoother animation
+- `kv()` replaces inline `print(f"  ✓ ...")` for status items
+- Colorize uses `re.sub()` for log levels (was `str.replace()`)
+- Log level badges renamed: ERROR→ERR, DEBUG→DBG, added FATAL
+
 ## [v1.5.5] — 2026-05-20
 
 ### Fixed
