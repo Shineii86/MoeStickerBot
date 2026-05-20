@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.2] — 2026-05-20
+
+### Fixed
+- Fixed Telegram channel card not rendering (replaced `<picture>` with `<img>` — GitHub doesn't support `<picture>`)
+- Aligned Chinese README structure to exactly match English README
+- Both READMEs now use identical markdown formatting
+
 ## [v1.4.1] — 2026-05-20
 
 ### Added

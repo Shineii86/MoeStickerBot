@@ -1,8 +1,8 @@
 <h5 align="center">‎𐂐 改编自 <a href="https://github.com/Shineii86/MoeStickersBot">Shineii86/MoeStickesBot</a></h5>
 
 > [!IMPORTANT]
-> • **生产环境请使用原版仓库**
-> • 本 Colab 笔记本是**个人定制版**，专为在 Google Colab 中快速测试和短期自托管而设计。
+> • **生产环境请使用原版仓库**  
+> • 本 Colab 笔记本是**个人定制版**，专为在 Google Colab 中快速测试和短期自托管而设计。  
 > • 如需 24/7 部署、贡献代码或使用完整功能（包括 WebApp），请参考原版 [Moe-Sticker-Bot](https://github.com/star-39/moe-sticker-bot) 仓库。
 
 <div align="center">
@@ -12,7 +12,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Go Version](https://img.shields.io/badge/Go-1.21%2B-00ADD8?logo=go)](https://go.dev/)
 
-[![原版仓库](https://img.shields.io/badge/Original-star-39%2Fmoe-sticker-bot-181717?style=flat&logo=github)](https://github.com/star-39/moe-sticker-bot)
+[![Original Repo](https://img.shields.io/badge/Original-star-39%2Fmoe-sticker-bot-181717?style=flat&logo=github)](https://github.com/star-39/moe-sticker-bot)
 
 [![GitHub Stars](https://img.shields.io/github/stars/Shineii86/MoeStickersBot?style=for-the-badge&color=FFB6C1)](https://github.com/Shineii86/MoeStickersBot/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/Shineii86/MoeStickersBot?style=for-the-badge&color=FF6B9D)](https://github.com/Shineii86/MoeStickersBot/fork)
@@ -32,11 +32,7 @@
 
 <p align="center">
   <a href="https://t.me/MaximXStickers">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://telegramcard.vercel.app/?username=MaximXStickers&theme=dark">
-      <source media="(prefers-color-scheme: light)" srcset="https://telegramcard.vercel.app/?username=MaximXStickers&theme=light">
-      <img src="https://telegramcard.vercel.app/?username=MaximXStickers&bgColor=rgba%28127%2C+29%2C+29%2C+1%29&textColor=%23fef2f2&subtleTextColor=%23fca5a5&extraColor=%23fbbf24&shadowColor=rgba%28251%2C+191%2C+36%2C+0.3%29&fontFamily=Arial%2C+sans-serif" alt="MaximXStickers Telegram Channel" width="850" />
-    </picture>
+    <img src="https://telegramcard.vercel.app/?username=MaximXStickers&bgColor=rgba%28127%2C+29%2C+29%2C+1%29&textColor=%23fef2f2&subtleTextColor=%23fca5a5&extraColor=%23fbbf24&shadowColor=rgba%28251%2C+191%2C+36%2C+0.3%29&fontFamily=Arial%2C+sans-serif" alt="MaximXStickers Telegram Channel" width="850" />
   </a>
 </p>
 
@@ -353,7 +349,7 @@ WebApp 管理器需要一个公共 HTTPS URL，Colab 本身不提供。笔记本
 
 ### 📓 Colab 笔记本作者
 
-Google Colab 改编版由 ❤️ **[Shinei Nouzen](https://github.com/Shineii86)** 制作。
+Google Colab 改编版由 ❤️ **[Shinei Nouzen](https://github.com/Shineii86)** 制作。  
 如果你觉得这个笔记本有帮助，考虑给个 ⭐ 并关注更多 Colab 项目！
 
 ### 🛠️ 工具与库
@@ -372,7 +368,7 @@ Google Colab 改编版由 ❤️ **[Shinei Nouzen](https://github.com/Shineii86)
 
 ### 💕 支持项目
 
-⭐ **[给 Shineii86/MoeStickersBot 点个星](https://github.com/Shineii86/MoeStickersBot)**
+⭐ **[给 Shineii86/MoeStickersBot 点个星](https://github.com/Shineii86/MoeStickersBot)**  
 ⭐ **[给这个 Colab 笔记本点个星](https://github.com/Shineii86/MoeStickerBot)**
 
 <br>
