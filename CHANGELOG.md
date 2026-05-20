@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.5.2] — 2026-05-20
+
+### Fixed
+- Replaced bare `except: pass` with `except Exception: pass` in ngrok URL retrieval (line 203) to avoid silently swallowing KeyboardInterrupt/SystemExit
+- Moved `import re` and `import requests` from mid-cell to top-level imports section for cleaner module loading
+- Removed duplicate `import requests` inside ngrok block (already imported at top)
+- Added proper notebook metadata (colab name, toc_visible, cell trusted flag)
+- Added `id=main_launcher` to main code cell metadata for better Colab identification
+
 ## [v1.5.1] — 2026-05-20
 
 ### Changed
