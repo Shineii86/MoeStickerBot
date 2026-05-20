@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.5] — 2026-05-20
+
+### Fixed
+- Replaced misleading Colab alternatives with accurate options (VPN or self-hosted VPS/Docker)
+
 ## [v1.4.4] — 2026-05-20
 
 ### Added
