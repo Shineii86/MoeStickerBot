@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.2.0] — 2026-05-20
+
+### Improved
+- Split monolithic code cell into 7 collapsible `#@title` cells for Colab
+- Each section now hides code by default — users see only titles and run buttons
+- Sections: Configuration, Imports, ANSI Colors, Startup Banner, Phase 1 (Build), Phase 2 (Configure), Phase 3 (Launch)
+- No input boxes or editable fields exposed — all config is pre-set in code
+
 ## [v1.1.0] — 2026-05-20
 
 ### Improved
