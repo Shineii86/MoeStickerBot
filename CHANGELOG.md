@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.5.5] — 2026-05-20
+
+### Fixed
+- Added TLS patch for TiDB Cloud Serverless connection (was failing with "insecure transport" error)
+- Patches `core/database.go` to add `params["tls"] = "true"` before Go build
+- Bot now connects to TiDB Cloud with TLS encryption
+
 ## [v1.5.4] — 2026-05-20
 
 ### Fixed
