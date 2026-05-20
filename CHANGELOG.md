@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.5.1] — 2026-05-20
+
+### Changed
+- Updated Owner Key hash for token tool authentication
+
 ## [v1.5.0] — 2026-05-20
 
 ### Removed
