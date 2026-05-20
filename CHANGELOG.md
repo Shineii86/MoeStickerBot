@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.6.1] — 2026-05-20
+
+### Changed
+- Updated README.md Notebook section with new UI features (theme detection, timestamps, debug mode, stderr capture, TLS patch)
+- Added UI Engine row to Features table (theme detection, timestamps, debug mode, log highlighting)
+- Updated Dependencies & Build section to mention TLS auto-patch
+- Expanded Troubleshooting table with TiDB TLS error, missing tables error, color detection issue
+- Updated "Bot exited immediately" troubleshooting to reference new stderr output
+
 ## [v1.6.0] — 2026-05-20
 
 ### Added

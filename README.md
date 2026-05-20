@@ -85,12 +85,15 @@ This **Google Colab Edition** packages the entire setup into a single notebook. 
 
 The setup is a single collapsible cell — code hidden by default, just hit play.
 
-- 🎨 Full ANSI color support with background highlights
+- 🎨 **Theme-adaptive colors** — auto-detects light/dark Colab mode
 - ⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏ Animated braille spinners during long steps
-- 💬 Clean, modern output with success/error/warning badges
+- 💬 Colored status badges with timestamps (`HH:MM:SS`)
 - 🔐 Encrypted bot token — no manual entry needed
 - 💓 Keep-alive heartbeat to prevent Colab timeout
 - 🔄 Auto-restart on crash (up to 5 attempts)
+- 🐛 **Debug mode** — set `LOG_LEVEL = "debug"` for verbose output
+- 🩺 Stderr capture on crash — shows actual Go errors, not generic messages
+- 🔒 TiDB TLS auto-patch — enables encrypted DB connections
 
 <p align="center">
   <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBot.ipynb">
@@ -127,6 +130,10 @@ Google Colab disconnects after ~90 minutes of inactivity. The notebook has a bui
 | | Format Conversion | Convert stickers to PNG, WebP, GIF, or original format |
 | 🔍 **Search** | Database Search | Find previously imported sticker packs |
 | ⚡ **Performance** | Multi‑threaded | Goroutines and worker pools for fast processing |
+| 🎨 **UI Engine** | Theme Detection | Auto-detects light/dark mode, adjusts all ANSI colors |
+| | Timestamps | `HH:MM:SS` on every status message |
+| | Debug Mode | Set `LOG_LEVEL="debug"` for detailed internal logs |
+| | Log Highlighting | Color-coded log levels (INFO/WARN/ERR/FATAL/DEBUG) |
 
 ---
 
@@ -195,10 +202,10 @@ The bot token is **encrypted** and embedded in the cell. You don't need to enter
 When you run the cell, it automatically:
 
 1. **Installs system packages** — `imagemagick`, `ffmpeg`, `libarchive-tools`, `curl`, `gifsicle`, `python3`, `exiv2`
-2. **Connects to TiDB Cloud** — shared database for sticker data persistence
+2. **Connects to TiDB Cloud** — shared database with TLS encryption
 3. **Downloads Go 1.22.4** — compiles the bot from source
 4. **Fetches Python helpers** — `msb_emoji.py`, `msb_kakao_decrypt.py`, `msb_rlottie.py`
-5. **Clones & builds** — downloads the bot source and compiles a optimized binary
+5. **Clones, patches & builds** — downloads bot source, applies TLS fix, compiles binary
 
 ### 🚀 Launch & Auto-Restart
 
@@ -301,12 +308,15 @@ All settings are Python variables at the top of the main cell. Expand it to edit
 
 | Issue | Solution |
 |-------|----------|
-| **"Bot exited immediately"** | Check if your token is valid. Use the Owner-Only Token Tool to verify. |
+| **"Bot exited immediately"** | Check the STDERR output shown — it now displays the actual Go error. |
+| **"insecure transport" DB error** | TiDB requires TLS. The notebook auto-patches this — just re-run. |
+| **"Table doesn't exist"** | Database tables missing. Re-run — the bot auto-creates them on first connect. |
 | **Bot stops after ~90 minutes** | This is normal on free Colab. Keep the tab active, or use Colab Pro. |
 | **WebApp not working** | Set `ENABLE_WEBAPP = True` and provide a valid `NGROK_AUTHTOKEN`. |
 | **ngrok URL not retrieved** | Check your ngrok auth token and ensure port `4040` isn't blocked. |
 | **"Database disabled" warning** | This is fine — the bot works fully without a database. Set `ENABLE_DB = True` to connect. |
 | **Build failed** | Check git clone / go build output. Try re-running the cell. |
+| **Colors look wrong** | The notebook auto-detects light/dark mode. If colors are off, the terminal may not support OSC 11. |
 
 For more detailed logs, set `LOG_LEVEL = "debug"` in the configuration variables.
 
