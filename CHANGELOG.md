@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.1] — 2026-05-20
+
+### Added
+- Chinese Colab notebook as notebooks/MoeStickerBot_ZH.ipynb
+- Chinese README now links to Chinese notebook
+
 ## [v1.4.0] — 2026-05-20
 
 ### Added

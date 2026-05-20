@@ -98,7 +98,7 @@
 - 🔄 崩溃时自动重启（最多 5 次）
 
 <p align="center">
-  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBot.ipynb">
+  <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBot_ZH.ipynb">
     <img src="https://img.shields.io/badge/在%20Colab%20中打开-MoeStickerBot-FF6B9D?style=for-the-badge&logo=googlecolab" alt="在 Colab 中打开">
   </a>
 </p>
