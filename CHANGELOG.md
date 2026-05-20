@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.3] — 2026-05-20
+
+### Fixed
+- Translated all user-facing output text in Chinese notebook to Chinese
+- Banner, status messages, error messages, headers, and log labels all in Chinese
+
 ## [v1.4.2] — 2026-05-20
 
 ### Fixed
