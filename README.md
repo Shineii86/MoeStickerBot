@@ -54,12 +54,12 @@
 - [🛠️ Prerequisites](#️-prerequisites)
   - [🔐 Create a Telegram Bot Token](#-create-a-telegram-bot-token)
 - [🚀 Quick Start](#-quick-start)
-- [📚 Detailed Setup](#-detailed-setup)
-  - [Step 1: Open in Colab](#step-1-open-in-colab)
-  - [Step 2: Install Dependencies & Build](#step-2-install-dependencies--build)
-  - [Step 3: Download Helper Scripts](#step-3-download-helper-scripts)
-  - [Step 4: Configure & Launch](#step-4-configure--launch)
+- [📚 How It Works](#-how-it-works)
+  - [⚙️ Configuration & Bot Token](#️-configuration--bot-token)
+  - [📦 Dependencies & Build](#-dependencies--build)
+  - [🚀 Launch & Auto-Restart](#-launch--auto-restart)
 - [🌐 Optional: Enable WebApp (ngrok)](#-optional-enable-webapp-ngrok)
+- [🔐 Owner-Only: Update Bot Token](#-owner-only-update-bot-token)
 - [🤖 Bot Commands](#-bot-commands)
 - [⚙️ Configuration Reference](#️-configuration-reference)
 - [🔧 Troubleshooting](#-troubleshooting)
@@ -106,11 +106,11 @@ Pick the notebook that fits your style:
 
 ### 💡 Pro Tip: Keep Colab Running Longer
 
-Google Colab disconnects after ~90 minutes of inactivity. To maximize uptime without paying:
+Google Colab disconnects after ~90 minutes of inactivity. The notebook has a built-in **keep-alive heartbeat** that prints every 10 minutes to help prevent timeouts. To maximize uptime:
 
-1. **Minimize the Colab widget** – Click the **< >** button (bottom‑left) to collapse the code/output panel. The session stays active while minimized.
-2. **Keep the browser tab open** – Don't close it; you can switch to other tabs.
-3. **Occasionally interact** – Scroll or click inside the notebook every 30‑45 minutes.
+1. **Keep the browser tab open** – Don't close it; you can switch to other tabs.
+2. **Occasionally interact** – Scroll or click inside the notebook every 30‑45 minutes.
+3. **The heartbeat does the rest** – It prints a timestamp every 10 min to keep the session alive.
 
 > For 24/7 operation, consider upgrading to **Colab Pro** (longer runtimes) or deploying on a free VPS (e.g., Oracle Cloud Always Free).
 
@@ -161,69 +161,59 @@ You only need two things:
 
 ```bash
 # 1. Click the "Open in Colab" badge above
-# 2. Run all cells (Runtime → Run all)
-# 3. In the Configuration cell, paste your Bot Token
-# 4. (Optional) Enable WebApp and add your ngrok auth token
-# 5. Run the Launch cell
-# 6. Open Telegram and send /start to your bot
+# 2. Click ▶ Play on the main cell (code is hidden — just the title shows)
+# 3. When prompted, the bot uses a pre-configured encrypted token
+# 4. (Optional) Edit ENABLE_WEBAPP & NGROK_AUTHTOKEN inside the cell
+# 5. Open Telegram and send /start to your bot
 ```
 
-That's it! The notebook handles everything else: installing Go, system tools, Python helpers, and compiling the bot.
+That's it! The single cell handles everything: installing Go, system tools, Python helpers, compiling the bot, and launching it with auto-restart.
 
 ---
 
-## 📚 Detailed Setup
+## 📚 How It Works
 
-### Step 1: Open in Colab
+The entire bot setup lives in **one collapsible cell** with the title `🚀 Moe Sticker Bot — Configuration & Launch`. In Colab, the code is hidden by default — you only see the title and a play button. No input boxes, no editable fields.
 
-Click the **"Open in Colab"** badge at the top of this README. This will load the notebook into your Google Colab environment.
+### ⚙️ Configuration & Bot Token
 
-### Step 2: Install Dependencies & Build
+All settings are defined at the top of the cell as Python variables:
 
-The first code cell installs all required system packages and compiles the bot.
-
-**What gets installed:**
-
-```
-System Packages:
-├── imagemagick          → Image processing
-├── ffmpeg               → Video/animation conversion
-├── libarchive-tools     → Archive extraction (bsdtar)
-├── curl, gifsicle       → Network & GIF tools
-├── python3              → For helper scripts
-└── exiv2                → Metadata handling
-
-Go Compiler:
-└── go1.21.5             → Go programming language
-
-Build Output:
-└── /content/MoeStickersBot/MoeStickersBot
+```python
+ENABLE_DB       = True        # TiDB Cloud shared database
+ENABLE_WEBAPP   = False       # Set True to expose WebApp via ngrok
+WEBAPP_PORT     = 8080
+NGROK_AUTHTOKEN = ""          # Required if ENABLE_WEBAPP=True
+DATA_DIR        = "moe_sticker_bot_data"
+LOG_LEVEL       = "info"      # debug, info, warn, error
+HTTP_PROXY      = ""          # Optional http://proxy:port
+AUTO_RESTART    = True        # Auto-restart bot on crash
+MAX_RESTARTS    = 5           # Max restart attempts
+KEEP_ALIVE      = True        # Heartbeat every 10 min (fights Colab timeout)
 ```
 
-**Expected output:**
-```
-✅ All system dependencies installed!
-Go version: go1.21.5
-exiv2 version: 0.27.3
-ffmpeg version: 4.4.2
-ImageMagick version: 6.9.11
-```
+The bot token is **encrypted** and embedded in the cell. You don't need to enter it manually. If you need to update it, use the **Owner-Only Token Tool** cell at the bottom of the notebook.
 
-### Step 3: Download Helper Scripts
+### 📦 Dependencies & Build
 
-The second cell downloads Python helper scripts that the bot uses for specialized tasks:
+When you run the cell, it automatically:
 
-| Script | Purpose |
-|--------|---------|
-| `msb_emoji.py` | Extract and assign emoji representations |
-| `msb_kakao_decrypt.py` | Decrypt animated KakaoTalk stickers |
-| `msb_rlottie.py` | Convert TGS (Telegram animated sticker) format |
+1. **Installs system packages** — `imagemagick`, `ffmpeg`, `libarchive-tools`, `curl`, `gifsicle`, `python3`, `exiv2`
+2. **Connects to TiDB Cloud** — shared database for sticker data persistence
+3. **Downloads Go 1.22.4** — compiles the bot from source
+4. **Fetches Python helpers** — `msb_emoji.py`, `msb_kakao_decrypt.py`, `msb_rlottie.py`
+5. **Clones & builds** — downloads the bot source and compiles a optimized binary
 
-These are placed in `/usr/local/bin/` so the bot can find them.
+### 🚀 Launch & Auto-Restart
 
-### Step 4: Configure & Launch
+After building, the cell:
 
-The Configuration cell contains all settings you can adjust. At minimum, enter your `BOT_TOKEN`. After configuring, run the **Launch** cell.
+- Validates the bot token format
+- Optionally starts an ngrok tunnel for WebApp
+- Launches the bot as a subprocess
+- Streams color-coded logs in real-time
+- **Auto-restarts** on crash (up to 5 attempts)
+- Sends a **keep-alive heartbeat** every 10 minutes to prevent Colab timeout
 
 ---
 
@@ -235,11 +225,11 @@ The WebApp manager requires a public HTTPS URL, which Colab doesn't provide nati
 
 1. **Sign up for a free ngrok account** at [ngrok.com](https://ngrok.com/).
 2. Copy your **authtoken** from the [dashboard](https://dashboard.ngrok.com/auth).
-3. In the **Configuration** cell:
+3. **Expand the main cell** by clicking its title, then edit the config variables:
    - Set `ENABLE_WEBAPP = True`
-   - Paste your token into `NGROK_AUTHTOKEN`
+   - Set `NGROK_AUTHTOKEN = "your_token_here"`
    - (Optional) Change `WEBAPP_PORT` if needed
-4. Run all cells. The notebook will automatically:
+4. Run the cell. It will automatically:
    - Download and install ngrok
    - Start a tunnel to the WebApp port
    - Retrieve the public `https://` URL
@@ -247,6 +237,24 @@ The WebApp manager requires a public HTTPS URL, which Colab doesn't provide nati
 
 > [!NOTE]
 > Free ngrok URLs are temporary and change each session. You'll need to re‑run the setup if the Colab runtime restarts.
+
+---
+
+## 🔐 Owner-Only: Update Bot Token
+
+The notebook includes a **Token Encrypt/Decrypt Tool** cell at the bottom. This is for the bot owner only.
+
+**To update the bot token:**
+
+1. Expand the `🔐 Owner-Only: Encrypt / Decrypt Bot Token` cell
+2. Enter your **Owner Key** (the secret key set by the notebook author)
+3. Choose **encrypt** as the action
+4. Paste your raw bot token from [@BotFather](https://t.me/BotFather)
+5. Run the cell — it outputs an encrypted string
+6. Copy the encrypted string into the main cell's `_ENC_TOKEN` variable
+
+> [!WARNING]
+> Never share your raw bot token or owner key. The encryption is for basic obfuscation, not military-grade security.
 
 ---
 
@@ -276,19 +284,20 @@ Once running, interact with your bot on Telegram using these commands:
 
 ## ⚙️ Configuration Reference
 
-The notebook provides the following configuration options:
+All settings are Python variables at the top of the main cell. Expand it to edit.
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `BOT_TOKEN` | ✅ Yes | Your Telegram Bot Token |
-| `ENABLE_DB` | ❌ No | Enable MariaDB for shared sticker sets |
-| `DB_ADDR` / `DB_USER` / `DB_PASS` | Only if DB enabled | Database connection details |
-| `ENABLE_WEBAPP` | ❌ No | Enable WebApp support via ngrok |
-| `WEBAPP_PORT` | Only if WebApp | Port for internal WebApp server (default: 8080) |
-| `NGROK_AUTHTOKEN` | Only if WebApp | Your free ngrok authtoken |
-| `DATA_DIR` | ❌ No | Where the bot stores data |
-| `LOG_LEVEL` | ❌ No | `debug`, `info`, `warn`, or `error` |
-| `HTTP_PROXY` | ❌ No | Proxy URL if needed |
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `ENABLE_DB` | `True` | Enable TiDB Cloud shared database (sticker data persists) |
+| `ENABLE_WEBAPP` | `False` | Enable WebApp support via ngrok tunnel |
+| `WEBAPP_PORT` | `8080` | Port for the internal WebApp server |
+| `NGROK_AUTHTOKEN` | `""` | Your ngrok authtoken (required if WebApp enabled) |
+| `DATA_DIR` | `"moe_sticker_bot_data"` | Directory where the bot stores data |
+| `LOG_LEVEL` | `"info"` | Logging verbosity: `debug`, `info`, `warn`, or `error` |
+| `HTTP_PROXY` | `""` | Optional HTTP proxy URL |
+| `AUTO_RESTART` | `True` | Auto-restart bot on crash |
+| `MAX_RESTARTS` | `5` | Maximum restart attempts before giving up |
+| `KEEP_ALIVE` | `True` | Print heartbeat every 10 min to prevent Colab timeout |
 
 ---
 
@@ -296,14 +305,14 @@ The notebook provides the following configuration options:
 
 | Issue | Solution |
 |-------|----------|
-| **"Bot exited immediately"** | Check `bot_stderr.log`. Common cause: invalid token format. |
-| **Missing exiv2 warning** | Re‑run the dependency cell: `!apt-get install -y exiv2` |
+| **"Bot exited immediately"** | Check if your token is valid. Use the Owner-Only Token Tool to verify. |
 | **Bot stops after ~90 minutes** | This is normal on free Colab. Keep the tab active, or use Colab Pro. |
-| **WebApp not working** | Ensure `ENABLE_WEBAPP = True` and a valid `NGROK_AUTHTOKEN` is provided. |
-| **ngrok URL not retrieved** | Check that your ngrok auth token is correct and that port `4040` isn't blocked. |
-| **"Database not enabled" warning** | This is fine — the bot works fully without a database. |
+| **WebApp not working** | Set `ENABLE_WEBAPP = True` and provide a valid `NGROK_AUTHTOKEN`. |
+| **ngrok URL not retrieved** | Check your ngrok auth token and ensure port `4040` isn't blocked. |
+| **"Database disabled" warning** | This is fine — the bot works fully without a database. Set `ENABLE_DB = True` to connect. |
+| **Build failed** | Check git clone / go build output. Try re-running the cell. |
 
-For more detailed logs, set `LOG_LEVEL = "debug"` in the Configuration cell.
+For more detailed logs, set `LOG_LEVEL = "debug"` in the configuration variables.
 
 ---
 

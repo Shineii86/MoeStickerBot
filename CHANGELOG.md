@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.3.0] — 2026-05-20
+
+### Changed
+- Updated README.md to match current single-cell notebook structure
+- Replaced "Detailed Setup" with "How It Works" section (Configuration, Dependencies, Launch)
+- Updated Configuration Reference table with all actual variables and defaults
+- Added "Owner-Only: Update Bot Token" section explaining the token tool cell
+- Updated Troubleshooting to match notebook's actual behavior
+- Updated Pro Tip section to reflect keep-alive heartbeat feature
+
 ## [v1.2.0] — 2026-05-20
 
 ### Improved
