@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.5.3] — 2026-05-20
+
+### Fixed
+- Added auto-detection of light/dark mode via ANSI OSC 11 background color query
+- All ANSI colors now adapt dynamically: bright colors (90-97) in dark mode, standard (30-37) in light mode
+- WH/BLK text colors swap between themes for proper contrast on background strips
+- Badge functions (success/error/warn/info) use consistent WH text on all backgrounds
+- Added BD (bold-off, \033[22m) attribute for future use
+- Detection defaults to dark mode if query fails (Colab dark mode default)
+
 ## [v1.5.2] — 2026-05-20
 
 ### Fixed
