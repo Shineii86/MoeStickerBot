@@ -48,8 +48,7 @@
 ## 📖 Table of Contents
 
 - [🎯 Overview](#-overview)
-- [📓 Choose Your Version](#-choose-your-version)
-  - [Animated Colors](#-animated--colors)
+- [📓 Notebook](#-notebook)
 - [✨ Features](#-features)
 - [🛠️ Prerequisites](#️-prerequisites)
   - [🔐 Create a Telegram Bot Token](#-create-a-telegram-bot-token)
@@ -85,20 +84,20 @@ This **Google Colab Edition** packages the entire setup into a single notebook. 
 
 ---
 
-## 📓 Choose Your Version
+## 📓 Notebook
 
-Pick the notebook that fits your style:
-
-### Animated Colors
+The setup is a single collapsible cell — code hidden by default, just hit play.
 
 - 🎨 Full ANSI color support with background highlights
 - ⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏ Animated braille spinners during long steps
 - 💬 Clean, modern output with success/error/warning badges
-- ✨ Best balance of style and readability
+- 🔐 Encrypted bot token — no manual entry needed
+- 💓 Keep-alive heartbeat to prevent Colab timeout
+- 🔄 Auto-restart on crash (up to 5 attempts)
 
 <p align="center">
   <a href="https://colab.research.google.com/github/Shineii86/MoeStickerBot/blob/main/notebooks/MoeStickerBot.ipynb">
-    <img src="https://img.shields.io/badge/Open%20in%20Colab-Animated%20Colors-FF6B9D?style=for-the-badge&logo=googlecolab" alt="Open v2 in Colab">
+    <img src="https://img.shields.io/badge/Open%20in%20Colab-MoeStickerBot-FF6B9D?style=for-the-badge&logo=googlecolab" alt="Open in Colab">
   </a>
 </p>
 

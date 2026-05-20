@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.3.1] — 2026-05-20
+
+### Changed
+- Replaced outdated "Choose Your Version" section with single "Notebook" section
+- Updated Table of Contents to match
+
 ## [v1.3.0] — 2026-05-20
 
 ### Changed
