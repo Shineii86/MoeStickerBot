@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.3.2] — 2026-05-20
+
+### Fixed
+- Removed T4 GPU requirement from notebook metadata (no GPU needed for this bot)
+
 ## [v1.3.1] — 2026-05-20
 
 ### Changed
