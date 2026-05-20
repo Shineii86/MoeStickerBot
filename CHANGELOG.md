@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.5.4] — 2026-05-20
+
+### Fixed
+- Capture stderr to separate file when bot process launches for better error diagnostics
+- Display last 20 lines of stderr when bot exits immediately (instead of generic message)
+- Display last 10 lines of stderr on unexpected exits during auto-restart loop
+- Helps identify actual Go runtime errors, token issues, or DB connection failures
+
 ## [v1.5.3] — 2026-05-20
 
 ### Fixed
